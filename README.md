@@ -2,7 +2,7 @@
 
 ### [Live Demo](https://pictures.azeemansari.me/)
 
-![React Advice PWA](https://i.ibb.co/GR5Xg8c/React-Js-Pictures-Finder-Azeem-Ansari.png)
+![React Advice PWA](https://i.ibb.co/CJ1z1dm/React-Js-Pictures-Finder-PWA-Azeem-Ansari.png)
 
 ## Introduction
 This is a code repository for the ReactJs Pictures Finder Application. 
