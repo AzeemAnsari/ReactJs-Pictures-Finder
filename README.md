@@ -1,4 +1,4 @@
-# ReactJs Recipes Finder PWA
+# ReactJs Pictures Finder PWA
 
 ### [Live Demo](https://pictures.azeemansari.me/)
 
