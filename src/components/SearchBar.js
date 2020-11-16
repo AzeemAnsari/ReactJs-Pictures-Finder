@@ -1,17 +1,19 @@
 import React from 'react';
 
 class SearchBar extends React.Component {
-  state = { term: '', perPage: 10, inputError: false };
+  state = { term: '', perPage: 30, inputError: false };
 
   onFormSubmit = (event) => {
     event.preventDefault();
     this.setState({ inputError: false });
+
     if (this.state.term === '') {
       this.setState({ inputError: true });
+    } else {
+      this.props.onSubmit(this.state.term, this.state.perPage);
+      // console.log(this.state.term);
+      this.setState({ term: '' });
     }
-    this.props.onSubmit(this.state.term, this.state.perPage);
-    // console.log(this.state.term);
-    this.setState({ term: '' });
   };
 
   render() {
@@ -23,15 +25,12 @@ class SearchBar extends React.Component {
               <input
                 type="text"
                 placeholder="Search Image"
-                className="form-control form-control-lg"
+                className={`form-control form-control-lg ${
+                  this.state.inputError && 'is-invalid'
+                }`}
                 value={this.state.term}
                 onChange={(e) => this.setState({ term: e.target.value })}
               />
-              {this.state.inputError ? (
-                <p className="text-danger mb-0">This field cannot be empty!</p>
-              ) : (
-                ''
-              )}
             </div>
             <div className="col col-lg-2 col-sm-3 mb-3 mb-md-0">
               <select

@@ -1,9 +1,9 @@
 {
-  "short_name": "Picture Finder PWA",
-  "name": "Picture Finder PWA by Azeem Ansari",
+  "short_name": "Pictures Finder PWA",
+  "name": "ReactJs Pictures Finder PWA",
   "icons": [
     {
-      "src": "./logo.png",
+      "src": "/logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }

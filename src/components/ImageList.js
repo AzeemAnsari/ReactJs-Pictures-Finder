@@ -1,29 +1,30 @@
 import React from 'react';
-import './ImageList.css';
+import { Download } from 'react-bootstrap-icons';
+import { DownloadBtn } from './Styles';
 
-const ImageList = (props) => {
-  const imgs = props.images.map((img) => {
-    return (
-      <div key={img.id} className="col-12 col-md-4">
-        <img
-          src={img.urls.regular}
-          alt={img.description}
-          className="img-fluid img-thumbnail rounded"
-        />
-        <div className="mt-2 mb-3 text-center">
-          <a
-            href={img.links.download}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-link btn-sm text-uppercase"
-          >
-            Download
-          </a>
+const ImageList = ({ urls, alt_description, links }) => {
+  return (
+    <div className="row">
+      <div className="col-md-12 px-1 position-relative">
+        <div className="rounded-lg overflow-hidden">
+          <img
+            src={urls.regular}
+            alt={alt_description}
+            className="img-fluid img-thumbnail rounded"
+          />
         </div>
+        <DownloadBtn
+          href={links.download}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-sm btn-light"
+          title="Download"
+        >
+          <Download />
+        </DownloadBtn>
       </div>
-    );
-  });
-  return <div className="row mt-4">{imgs}</div>;
+    </div>
+  );
 };
 
 export default ImageList;

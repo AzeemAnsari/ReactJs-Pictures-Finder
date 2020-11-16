@@ -30,3 +30,9 @@ export const LandingCotainer = styled.div`
     color: #d1d9e6;
   }
 `;
+
+export const DownloadBtn = styled.a`
+  position: absolute;
+  top: 15px;
+  right: 15px;
+`;
