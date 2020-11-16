@@ -1,0 +1,15 @@
+{
+  "short_name": "Picture Finder PWA",
+  "name": "Picture Finder PWA by Azeem Ansari",
+  "icons": [
+    {
+      "src": "./logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
