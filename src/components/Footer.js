@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="mt-auto">
       <p className="lead text-center small mt-4 mb-2">
-        &copy; 2020 -{' '}
+        &copy; {new Date().getFullYear()} -{' '}
         <a
           href="https://azeemansari.me"
           target="_blank"
